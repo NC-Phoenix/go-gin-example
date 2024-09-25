@@ -1,0 +1,16 @@
+CREATE DATABASE dbtest;
+
+CREATE TABLE products(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(256) DEFAULT '',
+    brand VARCHAR(256) DEFAULT '',
+    price NUMERIC(12,2)
+);
+
+INSERT INTO products
+    (name, brand, price)
+VALUES
+    ('สบู่', 'นกแก้ว', '15.5'),
+    ('ยาสระผม', 'Head & Shoulders', '75'),
+    ('ผงซักฟอก', 'บรีส', '120'),
+    ('น้ำยาปรับผ้านุ่ม', 'Downy', '35');
